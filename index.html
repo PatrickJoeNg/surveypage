@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Survey Page</title>
   </head>
   <body>
@@ -42,13 +43,110 @@
           </div>
         </div>
         <div class="labelTab">
-            <div class="label">
-                <label for="age" id="number-label">Age: </label>
-            </div>
+          <div class="label">
+            <label for="age" id="number-label">Age: </label>
+          </div>
+          <div class="formTab">
+            <input
+              type="number"
+              name="age"
+              id="number"
+              class="input-field"
+              placeholder="Age"
+              min="1"
+              max="150"
+              required
+            />
+          </div>
         </div>
-        <div class="formTab">
-        
+        <div class="labelTab">
+          <div class="label">
+            <label for="gender">Sex:</label>
+          </div>
+          <div class="formTab">
+            <ul style="list-style: none;">
+              <li class="radio">
+                <label
+                  >Male<input type="radio" name="radio-buttons" value="1"
+                /></label>
+              </li>
+              <li class="radio">
+                <label
+                  >Female<input type="radio" name="radio-buttons" value="2"
+                /></label>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="labelTab">
+          <div class="label">
+            <label for="currentPos">What describes your current role?</label>
+          </div>
+          <div class="formTab">
+            <select name="currentPos" id="dropdown" class="dropdown">
+              <option value="student">Student</option>
+              <option value="full-time">Full-Time Worker</option>
+              <option value="part-time">Part-Time Worker</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="labelTab">
+          <div class="label">
+            <label for="userRate"
+              >How likely are you to recommend this service?
+            </label>
+          </div>
+          <div class="formTab">
+            <ul style="list-style: none;">
+              <li class="radio">
+                <label>Definitely</label
+                ><input
+                  name="radio-buttons"
+                  value="1"
+                  type="radio"
+                  class="userRate"
+                />
+              </li>
+              <li class="radio">
+                <label>Maybe</label
+                ><input
+                  name="radio-buttons"
+                  value="2"
+                  type="radio"
+                  class="userRate"
+                />
+              </li>
+              <li class="radio">
+                <label>Not likely</label
+                ><input
+                  name="radio-buttons"
+                  value="3"
+                  type="radio"
+                  class="userRate"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="labelTab">
+          <div class="label">
+            <label for="rating-desc">Please explain your rating.</label>
+          </div>
+          <div class="formTab">
+            <textarea
+              class="input-field"
+              name="rating-desc"
+              id="rating-desc"
+              style="height: 50px;
+              resize:vertical;"
+              placeholder="Explain your choice here..."
+            ></textarea>
+          </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
       </form>
     </div>
   </body>

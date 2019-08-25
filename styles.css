@@ -73,3 +73,29 @@ h1{
     display: block;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    .input-field {
+        width: 80%;
+    }
+    select {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    label{
+        width: 100%;
+        text-align: left;
+    }
+    .rightTab{
+        width:80%;
+        float:left;
+      }
+      .input-field{
+        width:100%;
+      }
+      select{
+        width: 100%;
+      }
+    }
+}

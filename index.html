@@ -11,7 +11,7 @@
     <h1 id="title">Survey Page</h1>
     <div id="form-container">
       <p class="form-desc">Please give us feedback to improve!</p>
-      <form action="/action_page.php" method="get" id="survey-form">
+      <form action="POST" data-netlify="true" id="survey-form">
         <div class="labelTab">
           <div class="label">
             <label for="name" id="name-label">Name: </label>
@@ -146,6 +146,7 @@
             ></textarea>
           </div>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <button id="submit" type="submit">Submit</button>
       </form>
     </div>
